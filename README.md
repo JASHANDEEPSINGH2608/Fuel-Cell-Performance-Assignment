@@ -35,9 +35,9 @@ To explore the analysis and replicate the results:
 
 2. Install the required dependencies (see below).
 
-3. Run the notebook `ML_Assignment.ipynb` using Jupyter Notebook or JupyterLab:
+3. Run the notebook `ML_Assignment(102218023).ipynb` using Jupyter Notebook or JupyterLab:
    ```bash
-   jupyter notebook ML_Assignment.ipynb
+   jupyter notebook ML_Assignment(102218023).ipynb
    ```
 
 ## Dependencies
