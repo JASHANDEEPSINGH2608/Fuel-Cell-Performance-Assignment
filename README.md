@@ -48,10 +48,7 @@ The project requires the following Python libraries:
 - `matplotlib`
 - `seaborn`
 
-Install all dependencies using:
-```bash
-pip install -r requirements.txt
-```
+
 
 ## Project Structure
 ```
