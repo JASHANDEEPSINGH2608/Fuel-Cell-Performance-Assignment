@@ -8,7 +8,7 @@ This repository contains a comprehensive analysis of machine learning model perf
 3. [Dependencies](#dependencies)
 4. [Project Structure](#project-structure)
 5. [Results](#results)
-6. [Contributing](#contributing)
+
 
 ## Techniques and Approaches
 The notebook explores the following preprocessing techniques:
@@ -62,5 +62,31 @@ ML_Assignment/
 ```
 
 ## Results
+## Model Performance Comparison
+
+| Index | Model                    | Parameters                   | R² Score   |
+|-------|--------------------------|------------------------------|------------|
+| 0     | ExtraTreesRegressor      | None, 10 folds              | 0.7611     |
+| 1     | ExtraTreesRegressor      | None - shuffle, 10 folds    | 0.7673     |
+| 2     | LGBMRegressor            | None, 15 folds              | 0.7672     |
+| 3     | GradientBoostingRegressor| None, 15 folds              | 0.7544     |
+| 4     | ExtraTreesRegressor      | Normalization, 10 folds     | 0.7675     |
+| 5     | ExtraTreesRegressor      | Normalization, 15 folds     | 0.7735     |
+| 6     | ExtraTreesRegressor      | Feature Selection, 10 folds | 0.6901     |
+| 7     | ExtraTreesRegressor      | Feature Selection, 15 folds | 0.6936     |
+| 8     | LGBMRegressor            | Outlier Removal, 10 folds   | 0.7671     |
+| 9     | LGBMRegressor            | Outlier Removal, 15 folds   | 0.7621     |
+| 10    | ExtraTreesRegressor      | Transformation, 10 folds    | 0.7704     |
+| 11    | LGBMRegressor            | Transformation, 15 folds    | 0.7682     |
+| 12    | LGBMRegressor            | PCA, 10 folds               | 0.7768     |
+| 13    | LGBMRegressor            | PCA, 15 folds               | 0.7710     |
+| 14    | ExtraTreesRegressor      | N+OR, 10 folds              | 0.7606     |
+| 15    | LGBMRegressor            | N+T, 10 folds               | 0.7680     |
+| 16    | BayesianRidge            | N+PCA, 10 folds             | 0.7140     |
+| 17    | ExtraTreesRegressor      | OR+PCA, 10 folds            | 0.7616     |
+| 18    | LGBMRegressor            | OR+T, 10 folds              | 0.7619     |
+| 19    | LGBMRegressor            | PCA+T, 10 folds             | 0.7696     |
+| 20    | AdaBoostRegressor        | PCA - kernel, 10 folds      | -0.0099    |
+| 21    | ExtraTreesRegressor      | PCA - incremental, 10 folds | 0.7680     |
 
 
